@@ -5,6 +5,7 @@ const Header = ({ headTitle, headerExpanded }) => {
   const [displayText, setDisplayText] = useState("");
   const [index, setIndex] = useState(0);
 
+  // add useEffect
   useEffect(() => {
     const interval = setInterval(() => {
       if (index < headTitle.length) {
