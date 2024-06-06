@@ -17,7 +17,7 @@ const Header = ({ headTitle, headerExpanded }) => {
     }, 200);
 
     return () => clearInterval(interval);
-  }, [headTitle, index]);
+  }, [displayText, headTitle, index]);
 
   return (
     <div className="head-container">
