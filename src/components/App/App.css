@@ -1,6 +1,9 @@
 body {
-  background: #0f1228;
+  background: linear-gradient(to right, #0f1228, #1d2b64);
   overflow-x: hidden;
   color: #e7e9f0;
   font-family: "Lato", sans-serif;
+  font-size: 19px;
+  background-attachment: fixed;
+  background-size: cover;
 }
