@@ -13,11 +13,16 @@ class App extends React.Component {
     headerExpanded: true,
     suggestedNames: [],
   };
-  // Animation
+
+  // Fungsi menangani perubahan input dan menghasilkan nama domain
   handleInputChange = (inputText) => {
+    const keywords = inputText.split(",").map((keyword) => keyword.trim()); // Pisahkan berdasarkan koma dan hilangkan spasi ekstra
     this.setState({
-      headerExpanded: !(inputText.length > 0),
-      suggestedNames: inputText.length > 0 ? name(inputText) : [],
+      headerExpanded: !(keywords.length > 0 && keywords[0] !== ""),
+      suggestedNames:
+        keywords.length > 0 && keywords[0] !== ""
+          ? name(keywords.join(" "))
+          : [],
     });
   };
 

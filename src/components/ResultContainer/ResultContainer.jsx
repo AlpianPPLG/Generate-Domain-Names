@@ -6,15 +6,16 @@ const ResultContainer = ({ suggestedNames }) => {
   const suggestedNamesJsx =
     suggestedNames.length > 0 ? (
       <>
-        <p className="results-title">Your Domain Name Recommendation:</p>
+        <p className="results-title">Your Domain Name Recommendations:</p>
         {suggestedNames.map((suggestedName) => {
           return <NameCard key={suggestedName} suggestedName={suggestedName} />;
         })}
       </>
     ) : (
-      <p className="results-title">Your Domain Name Recommendation:</p>
+      <p className="results-title">Your Domain Name Recommendations:</p>
     );
 
   return <div className="results-container">{suggestedNamesJsx}</div>;
 };
+
 export default ResultContainer;
