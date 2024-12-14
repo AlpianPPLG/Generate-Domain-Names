@@ -1,0 +1,20 @@
+.advanced-search-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Membuat responsif */
+  margin: 20px 0;
+}
+
+.advanced-input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 1 1 150px; /* Memungkinkan input untuk tumbuh */
+}
+
+@media (max-width: 768px) {
+  .advanced-input {
+    flex: 1 1 100%; /* Input mengambil seluruh lebar pada layar kecil */
+  }
+}

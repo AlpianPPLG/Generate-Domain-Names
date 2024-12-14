@@ -24,3 +24,9 @@
   /* font-family: "Hachi Maru Pop", cursive; */
   margin: 5px 0 15px 0;
 }
+
+@media (max-width: 768px) {
+  .head-text {
+    font-size: 24px; /* Mengurangi ukuran font untuk layar kecil */
+  }
+}

@@ -48,3 +48,25 @@
 .copy-button:hover {
   background-color: #619ef3;
 }
+
+.favorite-button {
+  background-color: #4a5079;
+  color: #e7e9f0;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.35s;
+  margin-top: 5px;
+}
+
+.favorite-button:hover {
+  background-color: #e70d0d;
+}
+
+@media (max-width: 768px) {
+  .result-name-card {
+    flex: 1 1 100%; /* Mengubah ukuran pada layar kecil */
+    margin: 10px 0; /* Mengurangi margin untuk responsif */
+  }
+}

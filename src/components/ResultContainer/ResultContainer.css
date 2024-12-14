@@ -13,12 +13,41 @@
   text-align: center;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Membuat tombol pagination dapat membungkus */
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #4a5079;
+  color: #e7e9f0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pagination button:hover {
+  background: #619ef3;
+}
+
+.pagination button.active {
+  background: #e70d0d; /* Warna untuk halaman aktif */
+}
+
+/* Responsif untuk layar kecil */
 @media (max-width: 768px) {
-  .results-container {
-    padding: 20px;
+  .pagination button {
+    padding: 8px 12px; /* Mengurangi padding pada layar kecil */
+    font-size: 14px; /* Mengurangi ukuran font untuk tombol */
   }
 
-  .results-title {
-    font-size: 16px;
+  .pagination {
+    flex-direction: column; /* Mengubah arah menjadi kolom pada layar kecil */
+    align-items: center; /* Meratakan tombol di tengah */
   }
 }
